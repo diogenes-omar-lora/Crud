@@ -9,17 +9,17 @@
   <body>
     <nav class="navbar navbar-expand-lg bg-light">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">Navbar</a>
+          <a class="navbar-brand" href="#">BIBLIOTECA</a>
           <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
           <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav ">
               <li class="nav-item mx-lg-3">
-                <a class="nav-link active" aria-current="page" href="#">Usuarios</a>
+                <a class="nav-link active" aria-current="page" href="Crud-Usuario.html">Usuarios</a>
               </li>
               <li class="nav-item mx-lg-3">
-                <a class="nav-link" href="#">Ejemplares</a>
+                <a class="nav-link" href="Ejemplares.html">Ejemplares</a>
               </li>
               <li class="nav-item mx-lg-3">
                 <a class="nav-link" href="#">Libros</a>
@@ -34,7 +34,7 @@
       <div class="container my-5">
         <div class="row">
             <div class="col-md-8 col-sm-12">
-                <p class="fs-4 d-inline">BIBLIOTECA</p>
+                <p class="fs-4 d-inline">Ejemplares</p>
             </div>
             <div class="col-md-4 col-sm-12 text-lg-end text-md-end">
                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#nuevoUsuario">
@@ -48,50 +48,46 @@
                     <thead class="text-center">
                         <tr class="table-active">
                             <th>id</th>
-                            <th>Nombre</th>
-                            <th>Cedula</th>
-                            <th>Direccion</th>
-                            <th>Username</th>
+                            <th>Libros</th>
+                            <th>Cantidad Disponible</th>
+                            <th>Cantidad Prestados</th>
                             <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody class="text-center">
-                      <tr>
-                          <th class="">1</th>
-                          <th class="">Diogenes lora</th>
-                          <th class="">001-458923-9</th>
-                          <th class="">Calle.14 #7</th>
-                          <th class="">diogenes123</th>
+                    <tr>
+                        <th class="">1</th>
+                        <th class="">El Pirata</th>
+                        <th class="">10</th>
+                        <th class="">5</th>
                         <th>
                             <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
                                 Editar
                             </button>
                         </th>
-                      </tr>
-                      <tr>
+                    </tr>
+                    <tr>
                         <th class="">2</th>
-                        <th class="">omar lora</th>
-                        <th class="">001-458923-9</th>
-                        <th class="">Calle.14 #7</th>
-                        <th class="">lora312</th>
+                        <th class="">FrontEnd</th>
+                        <th class="">20</th>
+                        <th class="">6</th>
                         <th>
                             <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
                                 Editar
                             </button>
                         </th>
-                      </tr>
-                      <tr>
+                    </tr>
+                    <tr>
                         <th class="">3</th>
-                        <th class="">Randy</th>
-                        <th class="">001-458923-9</th>
-                        <th class="">Calle.14 #7</th>
-                        <th class="">randy312</th>
+                        <th class="">BackEnd</th>
+                        <th class="">10</th>
+                        <th class="">15</th>
                         <th>
                             <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
                                 Editar
                             </button>
                         </th>
-                      </tr>
+                    </tr>
                     </tbody>
                   </table>
               </div>
@@ -109,10 +105,9 @@
               <div class="card">
                 <div class="card-body">
                     <form action="">
-                        <input class="form-control my-3" type="text" placeholder="Nombre">
-                        <input class="form-control my-3" type="text" placeholder="Cedula">
-                        <input class="form-control my-3" type="text" placeholder="Direccion">
-                        <input class="form-control my-3" type="text" placeholder="UserName">
+                        <input class="form-control my-3" type="text" placeholder="Libro">
+                        <input class="form-control my-3" type="text" placeholder="Cantidad Disponibles">
+                        <input class="form-control my-3" type="text" placeholder="Cantidad Prestados">
                         <input class="form-control my-3" type="password" placeholder="Contraseña">
                     </form>
                 </div>
@@ -137,10 +132,9 @@
                 <div class="card">
                     <div class="card-body">
                         <form action="">
-                            <input class="form-control my-3" type="text" placeholder="Nombre">
-                            <input class="form-control my-3" type="text" placeholder="Cedula">
-                            <input class="form-control my-3" type="text" placeholder="Direccion">
-                            <input class="form-control my-3" type="text" placeholder="UserName">
+                            <input class="form-control my-3" type="text" placeholder="Libro">
+                            <input class="form-control my-3" type="text" placeholder="Cantidad Disponibles">
+                            <input class="form-control my-3" type="text" placeholder="Cantidad Prestados">
                             <input class="form-control my-3" type="password" placeholder="Contraseña">
                         </form>
                     </div>
