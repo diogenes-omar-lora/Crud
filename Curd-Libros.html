@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Ejemplares</title>
+    <title>Biblioteca</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
   </head>
   <body>
@@ -34,7 +34,7 @@
       <div class="container my-5">
         <div class="row">
             <div class="col-md-8 col-sm-12">
-                <p class="fs-4 d-inline">Ejemplares</p>
+                <p class="fs-4 d-inline">Libros</p>
             </div>
             <div class="col-md-4 col-sm-12 text-lg-end text-md-end">
                 <button type="button" class="btn btn-primary btn-sm" data-bs-toggle="modal" data-bs-target="#nuevoUsuario">
@@ -43,51 +43,55 @@
             </div>
         </div>
           <div class="row my-3">
-              <div class="col-lg-12 col-sm-8 col-md-12">
+              <div class="col-lg-12 col-sm-4 col-md-12">
                 <table class="table">
                     <thead class="text-center">
                         <tr class="table-active">
                             <th>id</th>
-                            <th>Libros</th>
-                            <th>Cantidad Disponible</th>
-                            <th>Cantidad Prestados</th>
+                            <th>Titulo</th>
+                            <th>ISBM</th>
+                            <th>Autor</th>
+                            <th>Editoria</th>
                             <th>Opciones</th>
                         </tr>
                     </thead>
                     <tbody class="text-center">
-                    <tr>
-                        <th class="">1</th>
-                        <th class="">El Pirata</th>
-                        <th class="">10</th>
-                        <th class="">5</th>
-                        <th>
-                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
-                                Editar
-                            </button>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="">2</th>
-                        <th class="">FrontEnd</th>
-                        <th class="">20</th>
-                        <th class="">6</th>
-                        <th>
-                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
-                                Editar
-                            </button>
-                        </th>
-                    </tr>
-                    <tr>
-                        <th class="">3</th>
-                        <th class="">BackEnd</th>
-                        <th class="">10</th>
-                        <th class="">15</th>
-                        <th>
-                            <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
-                                Editar
-                            </button>
-                        </th>
-                    </tr>
+                        <tr>
+                            <th class="">1</th>
+                            <th class="">El principito</th>
+                            <th class="">0010</th>
+                            <th class="">Pedro perez</th>
+                            <th class="">El lector</th>
+                            <th>
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
+                                    Editar
+                                </button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="">2</th>
+                            <th class="">El sapo</th>
+                            <th class="">4589</th>
+                            <th class="">omar lora</th>
+                            <th class="">El lector</th>
+                            <th>
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
+                                    Editar
+                                </button>
+                            </th>
+                        </tr>
+                        <tr>
+                            <th class="">3</th>
+                            <th class="">The king</th>
+                            <th class="">0015</th>
+                            <th class="">alan lora</th>
+                            <th class="">El lector</th>
+                            <th>
+                                <button type="button" class="btn btn-success btn-sm" data-bs-toggle="modal" data-bs-target="#editarUsuario">
+                                    Editar
+                                </button>
+                            </th>
+                        </tr>
                     </tbody>
                   </table>
               </div>
@@ -98,16 +102,17 @@
         <div class="modal-dialog">
           <div class="modal-content">
             <div class="modal-header">
-              <h5 class="modal-title" id="exampleModalLabel">Nuevo libro</h5>
+              <h5 class="modal-title" id="exampleModalLabel">Nuevo Libro</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
               <div class="card">
                 <div class="card-body">
                     <form action="">
-                        <input class="form-control my-3" type="text" placeholder="Libro">
-                        <input class="form-control my-3" type="text" placeholder="Cantidad Disponibles">
-                        <input class="form-control my-3" type="text" placeholder="Cantidad Prestados">
+                        <input class="form-control my-3" type="text" placeholder="Titulo">
+                        <input class="form-control my-3" type="text" placeholder="ISBM">
+                        <input class="form-control my-3" type="text" placeholder="Autor">
+                        <input class="form-control my-3" type="text" placeholder="Editoria">
                         <input class="form-control my-3" type="password" placeholder="Contraseña">
                     </form>
                 </div>
@@ -132,9 +137,10 @@
                 <div class="card">
                     <div class="card-body">
                         <form action="">
-                            <input class="form-control my-3" type="text" placeholder="Libro">
-                            <input class="form-control my-3" type="text" placeholder="Cantidad Disponibles">
-                            <input class="form-control my-3" type="text" placeholder="Cantidad Prestados">
+                            <input class="form-control my-3" type="text" placeholder="Titulo">
+                            <input class="form-control my-3" type="text" placeholder="ISBM">
+                            <input class="form-control my-3" type="text" placeholder="Autor">
+                            <input class="form-control my-3" type="text" placeholder="Editoria">
                             <input class="form-control my-3" type="password" placeholder="Contraseña">
                         </form>
                     </div>
